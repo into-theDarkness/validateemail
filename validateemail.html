@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validateemail</title>
+</head>
+<body>
+<script>
+    let regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    function checkemail() {
+        let a =prompt("nhap email vao day");
+        if (regexp.test(a)==true){
+            return true;
+        } return false;
+    }
+    if (checkemail()==true){
+        document.write("email ban nhap vao hop le")
+    } else {
+        document.write("email ban nhap vao k hop le")
+    }
+</script>
+</body>
+</html>
